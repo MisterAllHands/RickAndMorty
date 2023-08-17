@@ -14,7 +14,6 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
         setUpTabs()
     }
     
@@ -37,7 +36,7 @@ class TabBarController: UITabBarController {
       nav2.tabBarItem = UITabBarItem(title: "Locations",
                                      image: UIImage(systemName: "globe"),
                                      tag: 2)
-      nav2.tabBarItem = UITabBarItem(title: "Episodes",
+      nav3.tabBarItem = UITabBarItem(title: "Episodes",
                                      image: UIImage(systemName: "play"),
                                      tag: 3)
       
