@@ -7,3 +7,8 @@
 
 import Foundation
 
+
+struct SinleLocation: Codable {
+    let name: String
+    let url: String
+}
