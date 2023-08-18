@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED60E46D2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60E46C2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift */; };
+		ED60E46F2A8F6F09008F8182 /* CharacterCellViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60E46E2A8F6F09008F8182 /* CharacterCellViewViewModel.swift */; };
 		EDC3C48D2A8E06C60083D0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C48C2A8E06C60083D0B8 /* AppDelegate.swift */; };
 		EDC3C48F2A8E06C60083D0B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C48E2A8E06C60083D0B8 /* SceneDelegate.swift */; };
 		EDC3C4912A8E06C60083D0B8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4902A8E06C60083D0B8 /* TabBarController.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED60E46C2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED60E46E2A8F6F09008F8182 /* CharacterCellViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewViewModel.swift; sourceTree = "<group>"; };
 		EDC3C4892A8E06C60083D0B8 /* RickandMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickandMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC3C48C2A8E06C60083D0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC3C48E2A8E06C60083D0B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC3C4CD2A8F5C450083D0B8 /* CharacterListView.swift */,
+				ED60E46C2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC3C4CB2A8F5BE20083D0B8 /* CharacterListViewViewModel.swift */,
+				ED60E46E2A8F6F09008F8182 /* CharacterCellViewViewModel.swift */,
 			);
 			path = ViewModes;
 			sourceTree = "<group>";
@@ -267,6 +273,8 @@
 				EDC3C48D2A8E06C60083D0B8 /* AppDelegate.swift in Sources */,
 				EDC3C4AE2A8E0C500083D0B8 /* CharacterViewController.swift in Sources */,
 				EDC3C4B22A8E0C680083D0B8 /* EpisodesViewController.swift in Sources */,
+				ED60E46F2A8F6F09008F8182 /* CharacterCellViewViewModel.swift in Sources */,
+				ED60E46D2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift in Sources */,
 				EDC3C4A92A8E0BEE0083D0B8 /* Character.swift in Sources */,
 				EDC3C4CE2A8F5C450083D0B8 /* CharacterListView.swift in Sources */,
 				EDC3C4C02A8EB0500083D0B8 /* Origin.swift in Sources */,
