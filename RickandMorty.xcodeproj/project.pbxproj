@@ -27,6 +27,9 @@
 		EDC3C4C42A8EB1FD0083D0B8 /* CharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C32A8EB1FD0083D0B8 /* CharacterGender.swift */; };
 		EDC3C4C62A8EB2C20083D0B8 /* ChLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C52A8EB2C20083D0B8 /* ChLocation.swift */; };
 		EDC3C4CA2A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C92A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift */; };
+		EDC3C4CC2A8F5BE20083D0B8 /* CharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4CB2A8F5BE20083D0B8 /* CharacterListViewViewModel.swift */; };
+		EDC3C4CE2A8F5C450083D0B8 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4CD2A8F5C450083D0B8 /* CharacterListView.swift */; };
+		EDC3C4D02A8F60430083D0B8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4CF2A8F60430083D0B8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		EDC3C4C32A8EB1FD0083D0B8 /* CharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGender.swift; sourceTree = "<group>"; };
 		EDC3C4C52A8EB2C20083D0B8 /* ChLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChLocation.swift; sourceTree = "<group>"; };
 		EDC3C4C92A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharactersResponse.swift; sourceTree = "<group>"; };
+		EDC3C4CB2A8F5BE20083D0B8 /* CharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewViewModel.swift; sourceTree = "<group>"; };
+		EDC3C4CD2A8F5C450083D0B8 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		EDC3C4CF2A8F60430083D0B8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		EDC3C4A12A8E0AEE0083D0B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EDC3C4CD2A8F5C450083D0B8 /* CharacterListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 		EDC3C4A32A8E0AFE0083D0B8 /* ViewModes */ = {
 			isa = PBXGroup;
 			children = (
+				EDC3C4CB2A8F5BE20083D0B8 /* CharacterListViewViewModel.swift */,
 			);
 			path = ViewModes;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 				EDC3C4952A8E06C80083D0B8 /* Assets.xcassets */,
 				EDC3C4B72A8E14540083D0B8 /* icons8-worldwide-location-64-2.png */,
 				EDC3C4972A8E06C80083D0B8 /* LaunchScreen.storyboard */,
+				EDC3C4CF2A8F60430083D0B8 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 				EDC3C4AE2A8E0C500083D0B8 /* CharacterViewController.swift in Sources */,
 				EDC3C4B22A8E0C680083D0B8 /* EpisodesViewController.swift in Sources */,
 				EDC3C4A92A8E0BEE0083D0B8 /* Character.swift in Sources */,
+				EDC3C4CE2A8F5C450083D0B8 /* CharacterListView.swift in Sources */,
 				EDC3C4C02A8EB0500083D0B8 /* Origin.swift in Sources */,
 				EDC3C4BE2A8EA7DF0083D0B8 /* EndPoint.swift in Sources */,
 				EDC3C4AB2A8E0BFA0083D0B8 /* Episodes.swift in Sources */,
@@ -266,6 +276,8 @@
 				EDC3C4A72A8E0B9B0083D0B8 /* SingleLocation.swift in Sources */,
 				EDC3C48F2A8E06C60083D0B8 /* SceneDelegate.swift in Sources */,
 				EDC3C4B02A8E0C5B0083D0B8 /* LocationViewController.swift in Sources */,
+				EDC3C4D02A8F60430083D0B8 /* Extensions.swift in Sources */,
+				EDC3C4CC2A8F5BE20083D0B8 /* CharacterListViewViewModel.swift in Sources */,
 				EDC3C4C42A8EB1FD0083D0B8 /* CharacterGender.swift in Sources */,
 				EDC3C4C22A8EB1D30083D0B8 /* CharacterStatus.swift in Sources */,
 				EDC3C4C62A8EB2C20083D0B8 /* ChLocation.swift in Sources */,

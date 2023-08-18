@@ -11,7 +11,7 @@ import Foundation
 struct GetAllCharactersResponse: Codable {
     
     let info: Info
-    let result: [Character]
+    let results: [Character]
 }
 
 struct Info: Codable {

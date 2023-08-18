@@ -36,6 +36,7 @@ final class ServiceAPI {
         }
         
         let task = URLSession.shared.dataTask(with: urlRequest){ data, _ , error in
+
             guard let data = data, error == nil else {
                 completion(.failure(error ?? ServiceAPIError.failedToGetData))
                 return
@@ -47,7 +48,7 @@ final class ServiceAPI {
                 let result = try JSONDecoder().decode(type.self, from: data)
                 completion(.success(result))
             }catch{
-                print("YOOOOOO, error: \(error)")
+                print(error.localizedDescription)
                 completion(.failure(error))
             }
         }

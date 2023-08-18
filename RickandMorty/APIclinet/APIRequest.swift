@@ -76,5 +76,5 @@ final class APIRequest {
 }
 
 extension APIRequest {
-    static let listCharacterRequests = APIRequest(endPoint: .charcter)
+    static let listCharacterRequests = APIRequest(endPoint: .character)
 }

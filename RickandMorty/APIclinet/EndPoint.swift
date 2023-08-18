@@ -12,7 +12,7 @@ import Foundation
 ///Object that represents uinque API endpoint
 @frozen enum Endpoint: String {
     ///Endpoint to get character info
-    case charcter
+    case character
     ///Endpoint to get location info
     case location
     ///Endpoint to get episode info
