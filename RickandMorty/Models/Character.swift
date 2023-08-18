@@ -15,7 +15,7 @@ struct Character: Codable {
          let status: CharacterStatus
          let species: String
          let type: String
-         let gender: CharacterGender
+         let `gender`: CharacterGender
          let origin: Origin
          let  location: SinleLocation
          let image: String

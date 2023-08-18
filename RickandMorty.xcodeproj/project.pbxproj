@@ -26,6 +26,7 @@
 		EDC3C4C22A8EB1D30083D0B8 /* CharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C12A8EB1D30083D0B8 /* CharacterStatus.swift */; };
 		EDC3C4C42A8EB1FD0083D0B8 /* CharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C32A8EB1FD0083D0B8 /* CharacterGender.swift */; };
 		EDC3C4C62A8EB2C20083D0B8 /* ChLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C52A8EB2C20083D0B8 /* ChLocation.swift */; };
+		EDC3C4CA2A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4C92A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		EDC3C4C12A8EB1D30083D0B8 /* CharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatus.swift; sourceTree = "<group>"; };
 		EDC3C4C32A8EB1FD0083D0B8 /* CharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGender.swift; sourceTree = "<group>"; };
 		EDC3C4C52A8EB2C20083D0B8 /* ChLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChLocation.swift; sourceTree = "<group>"; };
+		EDC3C4C92A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharactersResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +113,8 @@
 		EDC3C4A22A8E0AF50083D0B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EDC3C4A82A8E0BEE0083D0B8 /* Character.swift */,
-				EDC3C4A62A8E0B9B0083D0B8 /* SingleLocation.swift */,
-				EDC3C4AA2A8E0BFA0083D0B8 /* Episodes.swift */,
-				EDC3C4BF2A8EB0500083D0B8 /* Origin.swift */,
-				EDC3C4C12A8EB1D30083D0B8 /* CharacterStatus.swift */,
-				EDC3C4C32A8EB1FD0083D0B8 /* CharacterGender.swift */,
-				EDC3C4C52A8EB2C20083D0B8 /* ChLocation.swift */,
+				EDC3C4C82A8ECDBC0083D0B8 /* APIResponseTypes */,
+				EDC3C4C72A8ECD890083D0B8 /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +157,28 @@
 				EDC3C4B12A8E0C680083D0B8 /* EpisodesViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		EDC3C4C72A8ECD890083D0B8 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3C4A82A8E0BEE0083D0B8 /* Character.swift */,
+				EDC3C4A62A8E0B9B0083D0B8 /* SingleLocation.swift */,
+				EDC3C4AA2A8E0BFA0083D0B8 /* Episodes.swift */,
+				EDC3C4BF2A8EB0500083D0B8 /* Origin.swift */,
+				EDC3C4C12A8EB1D30083D0B8 /* CharacterStatus.swift */,
+				EDC3C4C32A8EB1FD0083D0B8 /* CharacterGender.swift */,
+				EDC3C4C52A8EB2C20083D0B8 /* ChLocation.swift */,
+			);
+			name = DataTypes;
+			sourceTree = "<group>";
+		};
+		EDC3C4C82A8ECDBC0083D0B8 /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				EDC3C4C92A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift */,
+			);
+			name = APIResponseTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC3C4CA2A8ECDDD0083D0B8 /* GetAllCharactersResponse.swift in Sources */,
 				EDC3C4BA2A8EA70D0083D0B8 /* ServiceAPI.swift in Sources */,
 				EDC3C4912A8E06C60083D0B8 /* TabBarController.swift in Sources */,
 				EDC3C48D2A8E06C60083D0B8 /* AppDelegate.swift in Sources */,

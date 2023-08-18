@@ -13,14 +13,14 @@ final class APIRequest {
 
     ///API Constants
     private struct Const {
-        static let baseURL = "https//:rickandmortyapi.com/api"
+        static let baseURL = "https://rickandmortyapi.com/api"
     }
     
     ///Endpoint
     private let endPoint: Endpoint
     
     ///These are path components if any
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     
     ///Queery components for API, if any
     private let queery: [URLQueryItem]
@@ -32,9 +32,13 @@ final class APIRequest {
         string += endPoint.rawValue
         
         if !pathComponents.isEmpty {
+            pathComponents.forEach({string += "/\($0)"})
+        }
+        
+        if !queery.isEmpty{
             string += "?"
             let argumentString = queery.compactMap({
-                guard let value = $0.value else{return nil}
+                guard let value = $0.value else {return nil}
                 return "\($0.name)=\(value)"
             }).joined(separator: "&")
             
@@ -62,11 +66,15 @@ final class APIRequest {
     ///- queery:  Collection of queery parameters
     init(
         endPoint: Endpoint,
-        pathComponents: Set<String> = [],
+        pathComponents: [String] = [],
         queery: [URLQueryItem] = []
     ) {
         self.endPoint = endPoint
         self.pathComponents = pathComponents
         self.queery = queery
     }
+}
+
+extension APIRequest {
+    static let listCharacterRequests = APIRequest(endPoint: .charcter)
 }
