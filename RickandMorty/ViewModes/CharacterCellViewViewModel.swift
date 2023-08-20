@@ -10,7 +10,7 @@ import UIKit
 final class CharacterCollectionCellViewModel {
     
    public let characterName: String
-   private let characterStatus: CharacterStatus
+   public let characterStatus: CharacterStatus
    private let characterImageUrl: URL?
    
     // MARK: Init

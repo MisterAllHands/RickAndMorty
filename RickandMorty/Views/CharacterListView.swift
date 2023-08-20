@@ -8,8 +8,16 @@
 import UIKit
 
 
+protocol CharacterListViewDelegate: AnyObject {
+    func rmCharacterListView(
+        _ characterListView: CharacterListView, didSelectCharacter character: Character
+    )
+}
+
 ///View that handles showing characters, loader, etc
 final class CharacterListView: UIView {
+    
+    public weak var delegate: CharacterListViewDelegate? 
     
     private let viewModel = CharacterListViewViewModel()
     
@@ -22,10 +30,11 @@ final class CharacterListView: UIView {
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.isHidden = true
         collectionView.alpha = 0
+        collectionView.backgroundColor = UIColor(named: "backgroundColor_app")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(CharacterCollectionViewCell.self, forCellWithReuseIdentifier: CharacterCollectionViewCell.cellIdentifier.self)
         return collectionView
@@ -68,6 +77,10 @@ final class CharacterListView: UIView {
 }
 
 extension CharacterListView: CharacterListViewViewModelDelegate {
+    func didSelectCharacter(_ character: Character) {
+        delegate?.rmCharacterListView(self, didSelectCharacter: character)
+    }
+    
     func didLoadCharacters() {
         spinner.stopAnimating()
         collectionView.isHidden = false

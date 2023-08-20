@@ -11,11 +11,13 @@ import UIKit
 
 protocol CharacterListViewViewModelDelegate: AnyObject {
     func didLoadCharacters()
+    func didSelectCharacter(_ character: Character)
 }
 
 final class CharacterListViewViewModel: NSObject {
     
     public weak var delegate: CharacterListViewViewModelDelegate?
+    
     
     private var characters: [Character] = [] {
         didSet{
@@ -68,7 +70,12 @@ extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionVi
         let bounds = UIScreen.main.bounds
         return CGSize(
             width: (bounds.width-30)/2,
-            height: (bounds.width-30)/2 * 1.5
+            height: (bounds.width-30)/2 * 1.4
         )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = characters[indexPath.row]
+        delegate?.didSelectCharacter(character)
     }
 }

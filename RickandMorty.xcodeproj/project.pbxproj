@@ -9,18 +9,37 @@
 /* Begin PBXBuildFile section */
 		ED60E46D2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60E46C2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift */; };
 		ED60E46F2A8F6F09008F8182 /* CharacterCellViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60E46E2A8F6F09008F8182 /* CharacterCellViewViewModel.swift */; };
+		ED60E4742A8F9784008F8182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED60E4722A8F9784008F8182 /* LaunchScreen.storyboard */; };
+		ED60E47C2A8FFF0C008F8182 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60E47B2A8FFF0C008F8182 /* CharacterDetailView.swift */; };
+		EDA868C22A91D4D600191765 /* Kanit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868AF2A91D4D600191765 /* Kanit-ExtraLight.ttf */; };
+		EDA868C32A91D4D600191765 /* Kanit-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B02A91D4D600191765 /* Kanit-ThinItalic.ttf */; };
+		EDA868C42A91D4D600191765 /* Kanit-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B12A91D4D600191765 /* Kanit-BoldItalic.ttf */; };
+		EDA868C52A91D4D600191765 /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B22A91D4D600191765 /* Kanit-SemiBold.ttf */; };
+		EDA868C62A91D4D600191765 /* Kanit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B32A91D4D600191765 /* Kanit-Black.ttf */; };
+		EDA868C72A91D4D600191765 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B42A91D4D600191765 /* Kanit-Regular.ttf */; };
+		EDA868C82A91D4D600191765 /* Kanit-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B52A91D4D600191765 /* Kanit-Italic.ttf */; };
+		EDA868C92A91D4D600191765 /* Kanit-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B62A91D4D600191765 /* Kanit-MediumItalic.ttf */; };
+		EDA868CA2A91D4D600191765 /* Kanit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B72A91D4D600191765 /* Kanit-Thin.ttf */; };
+		EDA868CB2A91D4D600191765 /* Kanit-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B82A91D4D600191765 /* Kanit-ExtraBoldItalic.ttf */; };
+		EDA868CC2A91D4D600191765 /* Kanit-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868B92A91D4D600191765 /* Kanit-ExtraBold.ttf */; };
+		EDA868CD2A91D4D600191765 /* Kanit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868BA2A91D4D600191765 /* Kanit-Bold.ttf */; };
+		EDA868CE2A91D4D600191765 /* Kanit-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868BB2A91D4D600191765 /* Kanit-SemiBoldItalic.ttf */; };
+		EDA868CF2A91D4D600191765 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDA868BC2A91D4D600191765 /* OFL.txt */; };
+		EDA868D02A91D4D600191765 /* Kanit-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868BD2A91D4D600191765 /* Kanit-BlackItalic.ttf */; };
+		EDA868D12A91D4D600191765 /* Kanit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868BE2A91D4D600191765 /* Kanit-Light.ttf */; };
+		EDA868D22A91D4D600191765 /* Kanit-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868BF2A91D4D600191765 /* Kanit-LightItalic.ttf */; };
+		EDA868D32A91D4D600191765 /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868C02A91D4D600191765 /* Kanit-ExtraLightItalic.ttf */; };
+		EDA868D42A91D4D600191765 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA868C12A91D4D600191765 /* Kanit-Medium.ttf */; };
 		EDC3C48D2A8E06C60083D0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C48C2A8E06C60083D0B8 /* AppDelegate.swift */; };
 		EDC3C48F2A8E06C60083D0B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C48E2A8E06C60083D0B8 /* SceneDelegate.swift */; };
 		EDC3C4912A8E06C60083D0B8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4902A8E06C60083D0B8 /* TabBarController.swift */; };
 		EDC3C4962A8E06C80083D0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC3C4952A8E06C80083D0B8 /* Assets.xcassets */; };
-		EDC3C4992A8E06C80083D0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC3C4972A8E06C80083D0B8 /* LaunchScreen.storyboard */; };
 		EDC3C4A72A8E0B9B0083D0B8 /* SingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4A62A8E0B9B0083D0B8 /* SingleLocation.swift */; };
 		EDC3C4A92A8E0BEE0083D0B8 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4A82A8E0BEE0083D0B8 /* Character.swift */; };
 		EDC3C4AB2A8E0BFA0083D0B8 /* Episodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4AA2A8E0BFA0083D0B8 /* Episodes.swift */; };
 		EDC3C4AE2A8E0C500083D0B8 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4AD2A8E0C500083D0B8 /* CharacterViewController.swift */; };
 		EDC3C4B02A8E0C5B0083D0B8 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4AF2A8E0C5B0083D0B8 /* LocationViewController.swift */; };
 		EDC3C4B22A8E0C680083D0B8 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4B12A8E0C680083D0B8 /* EpisodesViewController.swift */; };
-		EDC3C4B82A8E14540083D0B8 /* icons8-worldwide-location-64-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC3C4B72A8E14540083D0B8 /* icons8-worldwide-location-64-2.png */; };
 		EDC3C4BA2A8EA70D0083D0B8 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4B92A8EA70D0083D0B8 /* ServiceAPI.swift */; };
 		EDC3C4BC2A8EA7170083D0B8 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4BB2A8EA7170083D0B8 /* APIRequest.swift */; };
 		EDC3C4BE2A8EA7DF0083D0B8 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3C4BD2A8EA7DF0083D0B8 /* EndPoint.swift */; };
@@ -37,12 +56,32 @@
 /* Begin PBXFileReference section */
 		ED60E46C2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED60E46E2A8F6F09008F8182 /* CharacterCellViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewViewModel.swift; sourceTree = "<group>"; };
+		ED60E4722A8F9784008F8182 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED60E47B2A8FFF0C008F8182 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		EDA868AF2A91D4D600191765 /* Kanit-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EDA868B02A91D4D600191765 /* Kanit-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ThinItalic.ttf"; sourceTree = "<group>"; };
+		EDA868B12A91D4D600191765 /* Kanit-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EDA868B22A91D4D600191765 /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
+		EDA868B32A91D4D600191765 /* Kanit-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Black.ttf"; sourceTree = "<group>"; };
+		EDA868B42A91D4D600191765 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
+		EDA868B52A91D4D600191765 /* Kanit-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Italic.ttf"; sourceTree = "<group>"; };
+		EDA868B62A91D4D600191765 /* Kanit-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-MediumItalic.ttf"; sourceTree = "<group>"; };
+		EDA868B72A91D4D600191765 /* Kanit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Thin.ttf"; sourceTree = "<group>"; };
+		EDA868B82A91D4D600191765 /* Kanit-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EDA868B92A91D4D600191765 /* Kanit-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EDA868BA2A91D4D600191765 /* Kanit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Bold.ttf"; sourceTree = "<group>"; };
+		EDA868BB2A91D4D600191765 /* Kanit-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EDA868BC2A91D4D600191765 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		EDA868BD2A91D4D600191765 /* Kanit-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-BlackItalic.ttf"; sourceTree = "<group>"; };
+		EDA868BE2A91D4D600191765 /* Kanit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Light.ttf"; sourceTree = "<group>"; };
+		EDA868BF2A91D4D600191765 /* Kanit-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-LightItalic.ttf"; sourceTree = "<group>"; };
+		EDA868C02A91D4D600191765 /* Kanit-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EDA868C12A91D4D600191765 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		EDC3C4892A8E06C60083D0B8 /* RickandMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickandMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC3C48C2A8E06C60083D0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC3C48E2A8E06C60083D0B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDC3C4902A8E06C60083D0B8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EDC3C4952A8E06C80083D0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EDC3C4982A8E06C80083D0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC3C49A2A8E06C80083D0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC3C4A62A8E0B9B0083D0B8 /* SingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLocation.swift; sourceTree = "<group>"; };
 		EDC3C4A82A8E0BEE0083D0B8 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -50,7 +89,6 @@
 		EDC3C4AD2A8E0C500083D0B8 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		EDC3C4AF2A8E0C5B0083D0B8 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		EDC3C4B12A8E0C680083D0B8 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
-		EDC3C4B72A8E14540083D0B8 /* icons8-worldwide-location-64-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-worldwide-location-64-2.png"; sourceTree = "<group>"; };
 		EDC3C4B92A8EA70D0083D0B8 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		EDC3C4BB2A8EA7170083D0B8 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		EDC3C4BD2A8EA7DF0083D0B8 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -75,9 +113,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EDA868AE2A91D4D600191765 /* Kanit */ = {
+			isa = PBXGroup;
+			children = (
+				EDA868AF2A91D4D600191765 /* Kanit-ExtraLight.ttf */,
+				EDA868B02A91D4D600191765 /* Kanit-ThinItalic.ttf */,
+				EDA868B12A91D4D600191765 /* Kanit-BoldItalic.ttf */,
+				EDA868B22A91D4D600191765 /* Kanit-SemiBold.ttf */,
+				EDA868B32A91D4D600191765 /* Kanit-Black.ttf */,
+				EDA868B42A91D4D600191765 /* Kanit-Regular.ttf */,
+				EDA868B52A91D4D600191765 /* Kanit-Italic.ttf */,
+				EDA868B62A91D4D600191765 /* Kanit-MediumItalic.ttf */,
+				EDA868B72A91D4D600191765 /* Kanit-Thin.ttf */,
+				EDA868B82A91D4D600191765 /* Kanit-ExtraBoldItalic.ttf */,
+				EDA868B92A91D4D600191765 /* Kanit-ExtraBold.ttf */,
+				EDA868BA2A91D4D600191765 /* Kanit-Bold.ttf */,
+				EDA868BB2A91D4D600191765 /* Kanit-SemiBoldItalic.ttf */,
+				EDA868BC2A91D4D600191765 /* OFL.txt */,
+				EDA868BD2A91D4D600191765 /* Kanit-BlackItalic.ttf */,
+				EDA868BE2A91D4D600191765 /* Kanit-Light.ttf */,
+				EDA868BF2A91D4D600191765 /* Kanit-LightItalic.ttf */,
+				EDA868C02A91D4D600191765 /* Kanit-ExtraLightItalic.ttf */,
+				EDA868C12A91D4D600191765 /* Kanit-Medium.ttf */,
+			);
+			path = Kanit;
+			sourceTree = "<group>";
+		};
 		EDC3C4802A8E06C60083D0B8 = {
 			isa = PBXGroup;
 			children = (
+				EDA868AE2A91D4D600191765 /* Kanit */,
 				EDC3C48B2A8E06C60083D0B8 /* RickandMorty */,
 				EDC3C48A2A8E06C60083D0B8 /* Products */,
 			);
@@ -118,6 +183,7 @@
 			children = (
 				EDC3C4CD2A8F5C450083D0B8 /* CharacterListView.swift */,
 				ED60E46C2A8F6DB9008F8182 /* CharacterCollectionViewCell.swift */,
+				ED60E47B2A8FFF0C008F8182 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,9 +211,8 @@
 			children = (
 				EDC3C48C2A8E06C60083D0B8 /* AppDelegate.swift */,
 				EDC3C48E2A8E06C60083D0B8 /* SceneDelegate.swift */,
+				ED60E4722A8F9784008F8182 /* LaunchScreen.storyboard */,
 				EDC3C4952A8E06C80083D0B8 /* Assets.xcassets */,
-				EDC3C4B72A8E14540083D0B8 /* icons8-worldwide-location-64-2.png */,
-				EDC3C4972A8E06C80083D0B8 /* LaunchScreen.storyboard */,
 				EDC3C4CF2A8F60430083D0B8 /* Extensions.swift */,
 			);
 			path = Resources;
@@ -254,9 +319,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC3C4B82A8E14540083D0B8 /* icons8-worldwide-location-64-2.png in Resources */,
-				EDC3C4992A8E06C80083D0B8 /* LaunchScreen.storyboard in Resources */,
+				EDA868D32A91D4D600191765 /* Kanit-ExtraLightItalic.ttf in Resources */,
+				ED60E4742A8F9784008F8182 /* LaunchScreen.storyboard in Resources */,
+				EDA868D12A91D4D600191765 /* Kanit-Light.ttf in Resources */,
+				EDA868CD2A91D4D600191765 /* Kanit-Bold.ttf in Resources */,
+				EDA868C32A91D4D600191765 /* Kanit-ThinItalic.ttf in Resources */,
+				EDA868C22A91D4D600191765 /* Kanit-ExtraLight.ttf in Resources */,
+				EDA868C72A91D4D600191765 /* Kanit-Regular.ttf in Resources */,
+				EDA868CE2A91D4D600191765 /* Kanit-SemiBoldItalic.ttf in Resources */,
+				EDA868CF2A91D4D600191765 /* OFL.txt in Resources */,
+				EDA868CC2A91D4D600191765 /* Kanit-ExtraBold.ttf in Resources */,
 				EDC3C4962A8E06C80083D0B8 /* Assets.xcassets in Resources */,
+				EDA868D22A91D4D600191765 /* Kanit-LightItalic.ttf in Resources */,
+				EDA868CA2A91D4D600191765 /* Kanit-Thin.ttf in Resources */,
+				EDA868C42A91D4D600191765 /* Kanit-BoldItalic.ttf in Resources */,
+				EDA868C62A91D4D600191765 /* Kanit-Black.ttf in Resources */,
+				EDA868CB2A91D4D600191765 /* Kanit-ExtraBoldItalic.ttf in Resources */,
+				EDA868C52A91D4D600191765 /* Kanit-SemiBold.ttf in Resources */,
+				EDA868D02A91D4D600191765 /* Kanit-BlackItalic.ttf in Resources */,
+				EDA868C82A91D4D600191765 /* Kanit-Italic.ttf in Resources */,
+				EDA868D42A91D4D600191765 /* Kanit-Medium.ttf in Resources */,
+				EDA868C92A91D4D600191765 /* Kanit-MediumItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +362,7 @@
 				EDC3C4CE2A8F5C450083D0B8 /* CharacterListView.swift in Sources */,
 				EDC3C4C02A8EB0500083D0B8 /* Origin.swift in Sources */,
 				EDC3C4BE2A8EA7DF0083D0B8 /* EndPoint.swift in Sources */,
+				ED60E47C2A8FFF0C008F8182 /* CharacterDetailView.swift in Sources */,
 				EDC3C4AB2A8E0BFA0083D0B8 /* Episodes.swift in Sources */,
 				EDC3C4BC2A8EA7170083D0B8 /* APIRequest.swift in Sources */,
 				EDC3C4A72A8E0B9B0083D0B8 /* SingleLocation.swift in Sources */,
@@ -293,17 +377,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EDC3C4972A8E06C80083D0B8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDC3C4982A8E06C80083D0B8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EDC3C49B2A8E06C80083D0B8 /* Debug */ = {
@@ -430,6 +503,7 @@
 				DEVELOPMENT_TEAM = 733XWR5Y23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RickandMorty/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -458,6 +532,7 @@
 				DEVELOPMENT_TEAM = 733XWR5Y23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RickandMorty/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
