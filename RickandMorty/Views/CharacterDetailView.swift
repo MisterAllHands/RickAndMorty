@@ -263,46 +263,46 @@ extension CharacterDetailView {
             }
             
         //Episode
-            VStack {
-                ForEach(character.episode, id: \.id) { episode in
-                    VStack(alignment: .leading, spacing: 16) {
-                        Text(episode.name)
-                            .font(
-                                Font.custom("Kanit-ExtraLight", size: 17)
-                                    .weight(.semibold)
-                            )
-                            .foregroundColor(.white)
-
-                        HStack {
-                            if let season = extractSeasonNumber(from: episode.episode) {
-                                Text("Season \(season), Episode \(episode.episode)")
-                            } else {
-                                Text("Episode \(episode.episode)")
-                            }
-                        }.font(Font.custom("Kanit-ExtraLight", size: 13)
-                            .weight(.medium))
-                         .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
-
-                        Spacer()
-
-                        Text(episode.air_date)
-                                .font(
-                                    Font.custom("Kanit-ExtraLight", size: 12)
-                                        .weight(.medium)
-                                )
-                                .multilineTextAlignment(.trailing)
-                                .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
-                                .padding(.horizontal, 16)
-                    }
-                    .padding(.leading)
-                    .foregroundColor(.clear)
-                    .frame(width: 360, height: 86)
-                    .background(.white.opacity(0.2))
-                    .cornerRadius(16)
-                    .padding(.horizontal, 24)
-                    .padding(.vertical, 4)
-                }
-            }
+//            VStack {
+//                ForEach(character.episode, id: \.id) { episode in
+//                    VStack(alignment: .leading, spacing: 16) {
+//                        Text(episode.name)
+//                            .font(
+//                                Font.custom("Kanit-ExtraLight", size: 17)
+//                                    .weight(.semibold)
+//                            )
+//                            .foregroundColor(.white)
+//
+//                        HStack {
+//                            if let season = extractSeasonNumber(from: episode.episode) {
+//                                Text("Season \(season), Episode \(episode.episode)")
+//                            } else {
+//                                Text("Episode \(episode.episode)")
+//                            }
+//                        }.font(Font.custom("Kanit-ExtraLight", size: 13)
+//                            .weight(.medium))
+//                         .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
+//
+//                        Spacer()
+//
+//                        Text(episode.air_date)
+//                                .font(
+//                                    Font.custom("Kanit-ExtraLight", size: 12)
+//                                        .weight(.medium)
+//                                )
+//                                .multilineTextAlignment(.trailing)
+//                                .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
+//                                .padding(.horizontal, 16)
+//                    }
+//                    .padding(.leading)
+//                    .foregroundColor(.clear)
+//                    .frame(width: 360, height: 86)
+//                    .background(.white.opacity(0.2))
+//                    .cornerRadius(16)
+//                    .padding(.horizontal, 24)
+//                    .padding(.vertical, 4)
+//                }
+//            }
         }
     }
 
@@ -333,3 +333,4 @@ extension CharacterDetailView {
         }
     }
 }
+

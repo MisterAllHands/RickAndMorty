@@ -24,10 +24,6 @@ final class CharacterCollectionCellViewModel {
         self.characterImageUrl = characterImageUrl
     }
     
-    public var characterStatusText: String {
-        return "Status: \(characterStatus.rawValue)"
-    }
-    
     public func fetchImage(completion: @escaping(Result <Data,Error>) -> ()) {
         guard let url = characterImageUrl else {completion(.failure(URLError(.badURL)))
             return

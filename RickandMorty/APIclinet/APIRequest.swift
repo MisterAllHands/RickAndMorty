@@ -10,7 +10,7 @@ import Foundation
 
 ///Object that represents single API Call
 final class APIRequest {
-
+    
     ///API Constants
     private struct Const {
         static let baseURL = "https://rickandmortyapi.com/api"
@@ -52,12 +52,12 @@ final class APIRequest {
     ///Desired HTTP method
     public let httpMethod = "GET"
     
-   
+    
     ///Computed constructed API
     public var url: URL? {
         URL(string: urlString)
     }
-
+    
     
     //Construct Request
     ///- Parameters:
@@ -73,7 +73,36 @@ final class APIRequest {
         self.pathComponents = pathComponents
         self.queery = queery
     }
+    
+    convenience init?(url: URL) {
+        let string = url.absoluteString
+        if !string.contains(Const.baseURL) {
+            return nil
+        }
+        let trimmed = string.replacingOccurrences(of: Const.baseURL+"/", with: "")
+        if trimmed.contains("/") {
+            let components = trimmed.components(separatedBy: "/")
+            if !components.isEmpty {
+                let endPointString = components[0]
+                if let endPoint = Endpoint(rawValue: endPointString) {
+                    self.init(endPoint: endPoint)
+                    return
+                }
+            }
+        }else if trimmed.contains("?"){
+            let components = trimmed.components(separatedBy: "?")
+            if !components.isEmpty {
+                let endPointString = components[0]
+                if let endPoint = Endpoint(rawValue: endPointString) {
+                    self.init(endPoint: endPoint)
+                    return
+                }
+            }
+        }
+        return nil
+    }
 }
+
 
 extension APIRequest {
     static let listCharacterRequests = APIRequest(endPoint: .character)

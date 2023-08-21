@@ -37,6 +37,9 @@ final class CharacterListView: UIView {
         collectionView.backgroundColor = UIColor(named: "backgroundColor_app")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(CharacterCollectionViewCell.self, forCellWithReuseIdentifier: CharacterCollectionViewCell.cellIdentifier.self)
+        collectionView.register(FooterCollectionLoadingCollectionReusableView.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+                                withReuseIdentifier: FooterCollectionLoadingCollectionReusableView.identfier)
         return collectionView
     }()
     
@@ -81,12 +84,18 @@ extension CharacterListView: CharacterListViewViewModelDelegate {
         delegate?.rmCharacterListView(self, didSelectCharacter: character)
     }
     
-    func didLoadCharacters() {
+    func didLoadInitialCharacters() {
         spinner.stopAnimating()
         collectionView.isHidden = false
         collectionView.reloadData()
         UIView.animate(withDuration: 0.4) {
             self.collectionView.alpha = 1
+        }
+    }
+    
+    func didLoadAdditionalCharacters(with newIndexPaths: [IndexPath]) {
+        collectionView.performBatchUpdates {
+            self.collectionView.insertItems(at: newIndexPaths)
         }
     }
 }
