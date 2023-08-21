@@ -28,7 +28,9 @@ final class CharacterListViewViewModel: NSObject {
                     characterStatus: character.status,
                     characterImageUrl: URL(string: character.image)
                 )
-                cellViewModels.append(vm)
+                if !cellViewModels.contains(vm) {
+                    cellViewModels.append(vm)
+                }
             }
         }
     }
@@ -40,7 +42,10 @@ final class CharacterListViewViewModel: NSObject {
         ServiceAPI.shared.execute(.listCharacterRequests, expecting: GetAllCharactersResponse.self){[weak self] result in
             switch result {
             case .success(let response):
+                
+                //Getting initial data
                 let initialResult = response.results
+                //we stick to the API info
                 let info = response.info
                 self?.apiInfo = info
                 self?.characters.append(contentsOf: initialResult)
@@ -71,29 +76,27 @@ final class CharacterListViewViewModel: NSObject {
 
             switch result {
             case .success(let response):
+                //Getting the additional data
                 let additionalResult = response.results
+                //Hanging on to the api info
                 let info = response.info
                 strongSelf.apiInfo = info
                 
+                //Calculates the initial additional and total of index at which we want to add new characters
                 let initialCount = strongSelf.characters.count
                 let additionalCount = additionalResult.count
-                print("Initial Count: \(initialCount)")
-                print(additionalCount)
                 let total = initialCount+additionalCount
-                print("totoal: \(total)")
                 let startingIndex = total - additionalCount
-                print("starting index: \(startingIndex)")
-                print("Array: \(startingIndex+additionalCount)")
+                //Converting the starting index to how many indexpath objects we want
                 let indexPToAdd: [IndexPath] = Array(startingIndex..<(startingIndex+additionalCount)).compactMap({
                     return IndexPath(row: $0, section: 0)
                 })
+                //Appending new results to current results
                 strongSelf.characters.append(contentsOf: additionalResult)
                 
                 DispatchQueue.main.async {
                     strongSelf.delegate?.didLoadAdditionalCharacters(with: indexPToAdd)
                     strongSelf.isLoadingMoreCharacters = false
-                    
-                    
                 }
             case .failure(let failure):
                 print(String(describing: failure))
