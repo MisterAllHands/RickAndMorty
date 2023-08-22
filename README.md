@@ -2,9 +2,9 @@
 
 The App showcases the characters from one of the worlds most famous cartoon Rick and Morty.
 
-![Simulator Screenshot - iPhone 12 - 2023-08-22 at 10 48 56](https://github.com/MisterAllHands/RickandMorty/assets/112771789/3d3f1cba-da75-4216-9851-c3c99133b57c)
+![Screenshot 2023-08-22 at 11 01 28](https://github.com/MisterAllHands/RickandMorty/assets/112771789/ce2afff6-93c4-4f2c-86df-669cba1d41d1)
 
-![Simulator Screenshot - iPhone 12 - 2023-08-22 at 10 56 08](https://github.com/MisterAllHands/RickandMorty/assets/112771789/ed5314c6-97c5-45fa-951b-19799283f26f)
+![Screenshot 2023-08-22 at 11 01 37](https://github.com/MisterAllHands/RickandMorty/assets/112771789/df329145-188c-47fc-94df-810d5bb06ab6)
 
-![Simulator Screenshot - iPhone 12 - 2023-08-22 at 10 56 14](https://github.com/MisterAllHands/RickandMorty/assets/112771789/c5a54565-8864-4862-a603-e66a48bbef0f)
+![Screenshot 2023-08-22 at 11 01 44](https://github.com/MisterAllHands/RickandMorty/assets/112771789/d2d81cf7-ff5a-42a5-866d-a81054e6f4dd)
 
