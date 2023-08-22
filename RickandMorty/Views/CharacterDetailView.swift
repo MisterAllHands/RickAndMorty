@@ -263,7 +263,6 @@ extension CharacterDetailView {
                                         .weight(.semibold)
                                 )
                                 .foregroundColor(.white)
-                                .lineLimit(1)
                             Spacer()
                         }
                         

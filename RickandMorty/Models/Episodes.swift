@@ -7,12 +7,24 @@
 
 import Foundation
 
-struct Episode: Codable {
+struct EpisodeInfo: Codable {
+    let count: Int
+    let pages: Int
+    let next: URL?
+    let prev: URL?
+}
+
+struct EpisodeCharacter: Codable {
     let id: Int
     let name: String
     let air_date: String
     let episode: String
-    let characters: [String]
-    let url: String
+    let characters: [URL]
+    let url: URL
     let created: String
+}
+
+struct EpisodeResults: Codable {
+    let info: EpisodeInfo
+    let results: [EpisodeCharacter]
 }

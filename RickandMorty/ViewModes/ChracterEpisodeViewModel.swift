@@ -2,33 +2,13 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct EpisodeInfo: Codable {
-    let count: Int
-    let pages: Int
-    let next: URL?
-    let prev: URL?
-}
-
-struct EpisodeCharacter: Codable {
-    let id: Int
-    let name: String
-    let air_date: String
-    let episode: String
-    let characters: [URL]
-    let url: URL
-    let created: String
-}
-
-struct EpisodeResults: Codable {
-    let info: EpisodeInfo
-    let results: [EpisodeCharacter]
-}
 
 
 class EpisodesManager: ObservableObject {
     @Published var episodes: [EpisodeCharacter] = []
     
     func fetchEpisodes() {
+        
         // Modify the fetchEpisodes function to update the episodes array
         fetchEpisodes { result in
             switch result {
@@ -65,5 +45,4 @@ class EpisodesManager: ObservableObject {
             }
         }.resume()
     }
-
 }
