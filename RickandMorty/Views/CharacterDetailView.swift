@@ -255,34 +255,40 @@ extension CharacterDetailView {
         //Episode
             VStack {
                 ForEach(episodesManager.episodes, id: \.id) { episode in
-                    VStack(alignment: .leading, spacing: 16) {
-                        Text(episode.name)
-                            .font(
-                                Font.custom("Kanit-ExtraLight", size: 17)
-                                    .weight(.semibold)
-                            )
-                            .foregroundColor(.white)
-
+                    VStack(alignment: .leading, spacing: 3) {
+                        HStack {
+                            Text(episode.name)
+                                .font(
+                                    Font.custom("Kanit-ExtraLight", size: 17)
+                                        .weight(.semibold)
+                                )
+                                .foregroundColor(.white)
+                                .lineLimit(1)
+                        }
+                        
                         HStack {
                             if let season = extractSeasonNumber(from: episode.episode) {
                                 Text("Season \(season), Episode \(episode.episode)")
                             } else {
                                 Text("Episode \(episode.episode)")
                             }
-                        }.font(Font.custom("Kanit-ExtraLight", size: 13)
+                        }
+                        .font(Font.custom("Kanit-ExtraLight", size: 13)
                             .weight(.medium))
-                         .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
+                        .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
+                        
 
-                        Spacer()
-
-                        Text(episode.air_date)
-                                .font(
-                                    Font.custom("Kanit-ExtraLight", size: 12)
-                                        .weight(.medium)
-                                )
-                                .multilineTextAlignment(.trailing)
-                                .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
-                                .padding(.horizontal, 16)
+                        HStack {
+                            Spacer()
+                            Text(episode.air_date)
+                                    .font(
+                                        Font.custom("Kanit-ExtraLight", size: 12)
+                                            .weight(.medium)
+                                    )
+                                    .multilineTextAlignment(.trailing)
+                                    .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
+                                    .padding(.horizontal, 16)
+                        }
                     }
                     .padding(.leading)
                     .foregroundColor(.clear)
