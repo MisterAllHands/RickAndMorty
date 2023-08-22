@@ -13,6 +13,7 @@ import UIKit
  final class CharacterViewController: UIViewController, CharacterListViewDelegate {
     
      private let characterListView = CharacterListView()
+
      
      private let imageView: UIImageView = {
          let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 245, height: 120))

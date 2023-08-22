@@ -12,7 +12,9 @@ import SwiftUI
 struct CharacterDetailView: View {
     
     let character: Character
-        
+    @ObservedObject var episodesManager = EpisodesManager()
+
+    
     @State private var characterImage: UIImage? = nil
 
     var body: some View {
@@ -46,6 +48,7 @@ struct CharacterDetailView: View {
                 }
                 .onAppear{
                     loadImage()
+                    episodesManager.fetchEpisodes()
                 }
 
             }
@@ -53,19 +56,6 @@ struct CharacterDetailView: View {
             .navigationBarTitleDisplayMode(.inline)
     }
 }
-
-
-
-struct CharacterDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        let character = Character(id: 1, name: "", status: .alive, species: "", type: "", gender: .male, origin: Origin(name: "", url: ""), location: SinleLocation(name: "", url: ""), image: "", episode: [], url: "", created: "")
-        CharacterDetailView(character: character)
-    }
-}
-
-
-
-//MARK: - Extensions
 
 extension CharacterDetailView {
     
@@ -263,46 +253,46 @@ extension CharacterDetailView {
             }
             
         //Episode
-//            VStack {
-//                ForEach(character.episode, id: \.id) { episode in
-//                    VStack(alignment: .leading, spacing: 16) {
-//                        Text(episode.name)
-//                            .font(
-//                                Font.custom("Kanit-ExtraLight", size: 17)
-//                                    .weight(.semibold)
-//                            )
-//                            .foregroundColor(.white)
-//
-//                        HStack {
-//                            if let season = extractSeasonNumber(from: episode.episode) {
-//                                Text("Season \(season), Episode \(episode.episode)")
-//                            } else {
-//                                Text("Episode \(episode.episode)")
-//                            }
-//                        }.font(Font.custom("Kanit-ExtraLight", size: 13)
-//                            .weight(.medium))
-//                         .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
-//
-//                        Spacer()
-//
-//                        Text(episode.air_date)
-//                                .font(
-//                                    Font.custom("Kanit-ExtraLight", size: 12)
-//                                        .weight(.medium)
-//                                )
-//                                .multilineTextAlignment(.trailing)
-//                                .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
-//                                .padding(.horizontal, 16)
-//                    }
-//                    .padding(.leading)
-//                    .foregroundColor(.clear)
-//                    .frame(width: 360, height: 86)
-//                    .background(.white.opacity(0.2))
-//                    .cornerRadius(16)
-//                    .padding(.horizontal, 24)
-//                    .padding(.vertical, 4)
-//                }
-//            }
+            VStack {
+                ForEach(episodesManager.episodes, id: \.id) { episode in
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text(episode.name)
+                            .font(
+                                Font.custom("Kanit-ExtraLight", size: 17)
+                                    .weight(.semibold)
+                            )
+                            .foregroundColor(.white)
+
+                        HStack {
+                            if let season = extractSeasonNumber(from: episode.episode) {
+                                Text("Season \(season), Episode \(episode.episode)")
+                            } else {
+                                Text("Episode \(episode.episode)")
+                            }
+                        }.font(Font.custom("Kanit-ExtraLight", size: 13)
+                            .weight(.medium))
+                         .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
+
+                        Spacer()
+
+                        Text(episode.air_date)
+                                .font(
+                                    Font.custom("Kanit-ExtraLight", size: 12)
+                                        .weight(.medium)
+                                )
+                                .multilineTextAlignment(.trailing)
+                                .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
+                                .padding(.horizontal, 16)
+                    }
+                    .padding(.leading)
+                    .foregroundColor(.clear)
+                    .frame(width: 360, height: 86)
+                    .background(.white.opacity(0.2))
+                    .cornerRadius(16)
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 4)
+                }
+            }
         }
     }
 
@@ -333,4 +323,17 @@ extension CharacterDetailView {
         }
     }
 }
+
+
+struct CharacterDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        let character = Character(id: 1, name: "", status: .alive, species: "", type: "", gender: .male, origin: Origin(name: "", url: ""), location: SinleLocation(name: "", url: ""), image: "", episode: [], url: "", created: "")        
+        CharacterDetailView(character: character)
+    }
+}
+
+
+
+//MARK: - Extensions
+
 

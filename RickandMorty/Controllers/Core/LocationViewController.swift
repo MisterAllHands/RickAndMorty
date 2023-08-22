@@ -23,6 +23,7 @@ final class LocationViewController: UIViewController {
         view.backgroundColor = UIColor(named: "backgroundColor_app")
         title = "Locations"
         view.addSubview(spinner)
+        spinner.color = .white
         addConstraint()
         spinner.startAnimating()
     }

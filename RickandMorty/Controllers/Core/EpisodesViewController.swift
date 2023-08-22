@@ -23,6 +23,7 @@ final class EpisodesViewController: UIViewController {
         view.backgroundColor = UIColor(named: "backgroundColor_app")
         title = "Episodes"
         view.addSubview(spinner)
+        spinner.color = .white
         addConstraint()
         spinner.startAnimating()
     }
