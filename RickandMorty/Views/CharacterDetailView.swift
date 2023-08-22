@@ -259,21 +259,21 @@ extension CharacterDetailView {
                         HStack {
                             Text(episode.name)
                                 .font(
-                                    Font.custom("Kanit-ExtraLight", size: 17)
+                                    Font.custom("Kanit-ExtraLight", size: 21)
                                         .weight(.semibold)
                                 )
                                 .foregroundColor(.white)
                                 .lineLimit(1)
+                            Spacer()
                         }
                         
                         HStack {
-                            if let season = extractSeasonNumber(from: episode.episode) {
-                                Text("Season \(season), Episode \(episode.episode)")
-                            } else {
-                                Text("Episode \(episode.episode)")
+                            let (season, episode) = extractSeasonAndEpisode(from: episode.episode)
+                            if let season = season, let episode = episode {
+                                Text("Season \(season), Episode \(episode)")
                             }
                         }
-                        .font(Font.custom("Kanit-ExtraLight", size: 13)
+                        .font(Font.custom("Kanit-ExtraLight", size: 14)
                             .weight(.medium))
                         .foregroundColor(Color(red: 0.28, green: 0.77, blue: 0.04))
                         
@@ -282,11 +282,11 @@ extension CharacterDetailView {
                             Spacer()
                             Text(episode.air_date)
                                     .font(
-                                        Font.custom("Kanit-ExtraLight", size: 12)
+                                        Font.custom("Kanit-ExtraLight", size: 13)
                                             .weight(.medium)
                                     )
-                                    .multilineTextAlignment(.trailing)
                                     .foregroundColor(Color(red: 0.58, green: 0.6, blue: 0.61))
+                                    .padding(.vertical, -23)
                                     .padding(.horizontal, 16)
                         }
                     }
@@ -299,33 +299,6 @@ extension CharacterDetailView {
                     .padding(.vertical, 4)
                 }
             }
-        }
-    }
-
-    
-    //Extract season number: S1E1 to Season: 1, Episode: 1
-    func extractSeasonNumber(from episodeString: String) -> Int? {
-        
-        let seasonPattern = #"S(\d{2})E\d{2}"#
-        let regex = try? NSRegularExpression(pattern: seasonPattern, options: [])
-        if let match = regex?.firstMatch(in: episodeString, options: [], range: NSRange(location: 0, length: episodeString.utf16.count)) {
-            if let seasonRange = Range(match.range(at: 1), in: episodeString), let seasonNumber = Int(episodeString[seasonRange]) {
-                return seasonNumber
-            }
-        }
-        return nil
-    }
-    
-    func loadImage() {
-        // Assuming character.image is a URL or filename as a String
-        if let imageURL = URL(string: character.image) {
-            URLSession.shared.dataTask(with: imageURL) { data, _, error in
-                if let data = data, let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        characterImage = image
-                    }
-                }
-            }.resume()
         }
     }
 }
@@ -342,4 +315,46 @@ struct CharacterDetailView_Previews: PreviewProvider {
 
 //MARK: - Extensions
 
-
+extension CharacterDetailView {
+    
+    //Extract season number: S1E1 to Season: 1, Episode: 1
+    func extractSeasonAndEpisode(from episodeString: String) -> (season: Int?, episode: Int?) {
+        let seasonPattern = #"S(\d+)"#
+        let episodePattern = #"E(\d+)"#
+        
+        let seasonRegex = try? NSRegularExpression(pattern: seasonPattern, options: [])
+        let episodeRegex = try? NSRegularExpression(pattern: episodePattern, options: [])
+        
+        let seasonMatch = seasonRegex?.firstMatch(in: episodeString, options: [], range: NSRange(location: 0, length: episodeString.utf16.count))
+        let episodeMatch = episodeRegex?.firstMatch(in: episodeString, options: [], range: NSRange(location: 0, length: episodeString.utf16.count))
+        
+        let seasonNumber = seasonMatch.flatMap { match in
+            Range(match.range(at: 1), in: episodeString).flatMap { range in
+                Int(episodeString[range])
+            }
+        }
+        
+        let episodeNumber = episodeMatch.flatMap { match in
+            Range(match.range(at: 1), in: episodeString).flatMap { range in
+                Int(episodeString[range])
+            }
+        }
+        
+        return (seasonNumber, episodeNumber)
+    }
+    
+    //Loading Image
+    func loadImage() {
+        // Assuming character.image is a URL or filename as a String
+        if let imageURL = URL(string: character.image) {
+            URLSession.shared.dataTask(with: imageURL) { data, _, error in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        characterImage = image
+                    }
+                }
+            }.resume()
+        }
+    }
+    
+}
